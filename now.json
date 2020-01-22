@@ -1,0 +1,12 @@
+{
+    "name": "EnmanuelVideo",
+    "version": 1.0,
+    "build": [{"src":"index.js", "use":"@now/node"}],
+    "routes": [{ "src": "/(.*)", "dest": "/index.js"}],
+    "env": {
+        "DB_USER": "@EnmanuelVideo-db-user",
+        "DB-PASSWORD": "@EnmanuelVideo-db-password",
+        "DB_HOST": "@EnmanuelVideo-db-host",
+        "DB_NAME": "@enmanuelVideo-db-name"
+    }
+}
