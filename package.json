@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "movies-api build",
     "now-build": "npm run build",
     "dev": "DEBUG=app:* nodemon index",
     "start": "NODE_ENV=production node index",

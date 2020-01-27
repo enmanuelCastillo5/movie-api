@@ -1,12 +1,16 @@
 {
-    "name": "EnmanuelVideo",
-    "version": 1.0,
-    "build": [{"src":"index.js", "use":"@now/node"}],
-    "routes": [{ "src": "/(.*)", "dest": "/index.js"}],
+    "version": 2.0,
+    "name": "enmanuelVideo-api",
+    "build": {
+        "src":"index.js", "use":"@now/node"
+     },
+    "routes": [
+        { "src": "/(.*)", "dest": "/index.js"}
+    ],
     "env": {
-        "DB_USER": "@EnmanuelVideo-db-user",
-        "DB-PASSWORD": "@EnmanuelVideo-db-password",
-        "DB_HOST": "@EnmanuelVideo-db-host",
-        "DB_NAME": "@enmanuelVideo-db-name"
+        "DB_USER": "@enmanuelvideo-db-user",
+        "DB_PASSWORD": "@enmanuelvideo-db-password",
+        "DB_HOST": "@enmanuelvideo-db-host",
+        "DB_NAME": "@enmanuelvideo-db-name"
     }
 }
